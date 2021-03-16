@@ -21,7 +21,7 @@ public class CustomerService {
     @GET
     @Path("/customers/{id}/")
     public Customer getCustomer(@PathParam("id") String id) {
-        System.out.println("Here invoking getCustomer, Customer id is: " + id);
+        System.out.println("Here invoking the getCustomer, Customer id is: " + id);
         long idNumber = Long.parseLong(id);
         Customer c = customers.get(idNumber);
         return c;
